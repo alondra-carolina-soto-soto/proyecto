@@ -1,9 +1,9 @@
 <template>
   <div class="contenido">
-    <h2> ¿Qué es JavaScript?</h2>
+   <h2 class="animate__animated animate__rubberBand titulo-css"> ¿Qué es JavaScript?</h2>
     <p>JavaScript sirve para que tu página haga cosas cuando alguien la usa.
-</p>
-<li>Muestra mensajes</li>
+</p >
+<li class="lista-css">Muestra mensajes</li>
 <li>Responde a clics o botones</li>
 <li>Cambia lo que ves sin recargar la página</li>
     <img src="@/assets/js.jpg" alt="JavaScript" class="imagen" />

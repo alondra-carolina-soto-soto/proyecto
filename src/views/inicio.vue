@@ -4,7 +4,9 @@
     
     <section>
      <center> <h2>Bienvenido</h2>
-      <p>aprende sobre los lenguajes de javascript y css.</p>
+<p class="animate__animated animate__swing animate__repeat">
+  Aprende sobre los lenguajes de JavaScript y CSS.
+</p>
       <img src="@/assets/js.jpg" alt="JavaScript" class="imagen" />
       <img src="@/assets/css.jpg" alt="CSS" class="imagen" />
     </center>
@@ -23,7 +25,7 @@ export default {
   display: flex;
   align-items: center;
   background-color: #333;
-  color: white;
+  color: rgb(7, 75, 78);
   padding: 1rem;
 }
 .logo {

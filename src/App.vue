@@ -70,4 +70,11 @@ export default {
   margin-top: 80px;
   padding: 1rem 2rem;
 }
+
+#app {
+  background-color: #76af76; /* o prueba #00cc44 para un verde vibrante */
+  min-height: 100vh;
+}
+
+
 </style>
