@@ -2,7 +2,8 @@
   <div id="app">
     <header class="navbar">
       <img src="@/assets/logo.png" alt="Logo" class="logo" />
-      <h1 class="titulo">codifica con stylo</h1>
+      <h1 class="titulo">
+        <span class='animado'>codifica con stylo</span></h1>
       <nav class="menu">
         <router-link to="/" class="btn">Inicio</router-link>
         <router-link to="/javascript" class="btn">JavaScript</router-link>
@@ -13,6 +14,7 @@
     <main class="contenido">
       <router-view />
     </main>
+    
   </div>
 </template>
 
@@ -20,6 +22,7 @@
 export default {
   name: 'App'
 }
+
 </script>
 
 <style scoped>
@@ -38,7 +41,7 @@ export default {
 }
 
 .logo {
-  width: 40px;
+  width: 100px;
   margin-right: 1rem;
 }
 
@@ -75,6 +78,26 @@ export default {
   background-color: #76af76; /* o prueba #00cc44 para un verde vibrante */
   min-height: 100vh;
 }
+/*ponerle efecto al titulo  */
+.titulo {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
 
+.animado {
+  display: inline-block;
+  animation: deslizamiento 10s ease-in-out infinite;
+  white-space: nowrap;
+  padding: 0 0rem;
+  /* grosor del encabezado*/
+  font-size: 2rem;
+}
+@keyframes deslizamiento {
+  0%   { transform: translateX(-30%); }
+  50%  { transform: translateX(50%); }
+  100% { transform: translateX(-30%); }
+}
 
 </style>
