@@ -1,0 +1,115 @@
+[debug] [2025-07-16T17:29:25.370Z] ----------------------------------------------------------------------
+[debug] [2025-07-16T17:29:25.380Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\sotos\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2025-07-16T17:29:25.382Z] CLI Version:   14.9.0
+[debug] [2025-07-16T17:29:25.384Z] Platform:      win32
+[debug] [2025-07-16T17:29:25.384Z] Node Version:  v20.12.2
+[debug] [2025-07-16T17:29:25.384Z] Time:          Wed Jul 16 2025 11:29:25 GMT-0600 (hora estándar central)
+[debug] [2025-07-16T17:29:25.384Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-07-16T17:29:25.392Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2025-07-16T17:29:25.917Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-07-16T17:29:25.917Z] > authorizing via signed-in user (sotosotoalondracarolina88@gmail.com)
+[debug] [2025-07-16T17:29:25.918Z] [iam] checking project codifica-con-stylo for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-07-16T17:29:25.919Z] Checked if tokens are valid: false, expires at: 1752079837187
+[debug] [2025-07-16T17:29:25.920Z] Checked if tokens are valid: false, expires at: 1752079837187
+[debug] [2025-07-16T17:29:25.920Z] > refreshing access token with scopes: []
+[debug] [2025-07-16T17:29:25.921Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-07-16T17:29:25.922Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-07-16T17:29:26.164Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2025-07-16T17:29:26.164Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2025-07-16T17:29:26.200Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2025-07-16T17:29:26.200Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-07-16T17:29:26.200Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/codifica-con-stylo:testIamPermissions [none]
+[debug] [2025-07-16T17:29:26.200Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/codifica-con-stylo:testIamPermissions x-goog-quota-user=projects/codifica-con-stylo
+[debug] [2025-07-16T17:29:26.200Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/codifica-con-stylo:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-07-16T17:29:26.702Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/codifica-con-stylo:testIamPermissions 401
+[debug] [2025-07-16T17:29:26.703Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/codifica-con-stylo:testIamPermissions {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED","details":[{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"ACCESS_TOKEN_TYPE_UNSUPPORTED","metadata":{"method":"google.cloudresourcemanager.v1.Projects.TestIamPermissions","service":"cloudresourcemanager.googleapis.com"}}]}}
+[debug] [2025-07-16T17:29:26.703Z] Got a 401 Unauthenticated error for a call that required authentication. Refreshing tokens.
+[debug] [2025-07-16T17:29:26.703Z] Checked if tokens are valid: false, expires at: 1752079837187
+[debug] [2025-07-16T17:29:26.703Z] Checked if tokens are valid: false, expires at: 1752079837187
+[debug] [2025-07-16T17:29:26.704Z] > refreshing access token with scopes: []
+[debug] [2025-07-16T17:29:26.704Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-07-16T17:29:26.704Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-07-16T17:29:26.801Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2025-07-16T17:29:26.801Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-07-16T17:29:26.802Z] [iam] error while checking permissions, command may fail: Request to https://cloudresourcemanager.googleapis.com/v1/projects/codifica-con-stylo:testIamPermissions had HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2025-07-16T17:29:26.803Z] Checked if tokens are valid: false, expires at: 1752079837187
+[debug] [2025-07-16T17:29:26.803Z] Checked if tokens are valid: false, expires at: 1752079837187
+[debug] [2025-07-16T17:29:26.803Z] > refreshing access token with scopes: []
+[debug] [2025-07-16T17:29:26.804Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-07-16T17:29:26.804Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-07-16T17:29:26.895Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2025-07-16T17:29:26.895Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-07-16T17:29:26.896Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/codifica-con-stylo [none]
+[debug] [2025-07-16T17:29:27.148Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/codifica-con-stylo 401
+[debug] [2025-07-16T17:29:27.149Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/codifica-con-stylo {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED"}}
+[debug] [2025-07-16T17:29:27.149Z] Got a 401 Unauthenticated error for a call that required authentication. Refreshing tokens.
+[debug] [2025-07-16T17:29:27.149Z] Checked if tokens are valid: false, expires at: 1752079837187
+[debug] [2025-07-16T17:29:27.149Z] Checked if tokens are valid: false, expires at: 1752079837187
+[debug] [2025-07-16T17:29:27.150Z] > refreshing access token with scopes: []
+[debug] [2025-07-16T17:29:27.150Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-07-16T17:29:27.150Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-07-16T17:29:27.248Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2025-07-16T17:29:27.248Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-07-16T17:29:27.249Z] Request to https://firebase.googleapis.com/v1beta1/projects/codifica-con-stylo had HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[error] 
+[error] Error: Assertion failed: resolving hosting target of a site with no site name or target name. This should have caused an error earlier
+[debug] [2025-07-16T17:31:59.053Z] ----------------------------------------------------------------------
+[debug] [2025-07-16T17:31:59.058Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\sotos\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init hosting
+[debug] [2025-07-16T17:31:59.058Z] CLI Version:   14.9.0
+[debug] [2025-07-16T17:31:59.059Z] Platform:      win32
+[debug] [2025-07-16T17:31:59.059Z] Node Version:  v20.12.2
+[debug] [2025-07-16T17:31:59.059Z] Time:          Wed Jul 16 2025 11:31:59 GMT-0600 (hora estándar central)
+[debug] [2025-07-16T17:31:59.059Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-07-16T17:31:59.368Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-07-16T17:31:59.369Z] > authorizing via signed-in user (sotosotoalondracarolina88@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\vue\proyecto
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2025-07-16T17:32:07.449Z] Using project from CLI flag: codifica-con-stylo
+[debug] [2025-07-16T17:32:07.457Z] Checked if tokens are valid: false, expires at: 1752079837187
+[debug] [2025-07-16T17:32:07.458Z] Checked if tokens are valid: false, expires at: 1752079837187
+[debug] [2025-07-16T17:32:07.460Z] > refreshing access token with scopes: []
+[debug] [2025-07-16T17:32:07.467Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-07-16T17:32:07.468Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-07-16T17:32:07.926Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2025-07-16T17:32:07.926Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-07-16T17:32:07.927Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/codifica-con-stylo [none]
+[debug] [2025-07-16T17:32:08.169Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/codifica-con-stylo 401
+[debug] [2025-07-16T17:32:08.169Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/codifica-con-stylo {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED"}}
+[debug] [2025-07-16T17:32:08.170Z] Got a 401 Unauthenticated error for a call that required authentication. Refreshing tokens.
+[debug] [2025-07-16T17:32:08.170Z] Checked if tokens are valid: false, expires at: 1752079837187
+[debug] [2025-07-16T17:32:08.170Z] Checked if tokens are valid: false, expires at: 1752079837187
+[debug] [2025-07-16T17:32:08.170Z] > refreshing access token with scopes: []
+[debug] [2025-07-16T17:32:08.170Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-07-16T17:32:08.171Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-07-16T17:32:08.281Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2025-07-16T17:32:08.281Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-07-16T17:32:08.284Z] Request to https://firebase.googleapis.com/v1beta1/projects/codifica-con-stylo had HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2025-07-16T17:32:08.509Z] FirebaseError: Request to https://firebase.googleapis.com/v1beta1/projects/codifica-con-stylo had HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+    at responseToError (C:\Users\sotos\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:52:12)
+    at RetryOperation._fn (C:\Users\sotos\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:312:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to get Firebase project codifica-con-stylo. Please make sure the project exists and your account has permission to access it.
