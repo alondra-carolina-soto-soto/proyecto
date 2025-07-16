@@ -27,8 +27,6 @@
     <footer class="footer animate__animated animate__fadeInUp">
       <div class="texto-footer">
 © 2025 Codifica con Stylo — Proyecto con fines educativos para práctica universitaria
-
- 
       </div>
     </footer>
 </template>
