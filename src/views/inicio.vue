@@ -26,7 +26,9 @@
   <!-- Footer -->
     <footer class="footer animate__animated animate__fadeInUp">
       <div class="texto-footer">
-        © 2025 Codifica con Stylo 
+© 2025 Codifica con Stylo — Proyecto con fines educativos para práctica universitaria
+
+ 
       </div>
     </footer>
 </template>
@@ -65,7 +67,7 @@ export default {
 .bienvenida {
   text-align: center;
   padding: 3rem 1rem;
-  color: #4b3869;
+  color: #080609;
 }
 
 .mensaje {
@@ -107,12 +109,12 @@ export default {
 
 /* Footer femenino */
 .footer {
-  background-color: #4b3869;
+  background-color: #000000;
   color: #ffffff;
   text-align: center;
   padding: 1.2rem 1rem;
   font-size: 0.95rem;
-  border-top: 4px solid #e75480;
+  border-top: 4px solid #ffffff;
   position: relative;
   bottom: 0;
   width: 100%;
