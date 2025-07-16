@@ -2,23 +2,33 @@
   <div class="inicio">
     <header></header>
 
-    <section class="bienvenida">
+    <!-- Sección bienvenida -->
+    <section class="bienvenida animate__animated animate__fadeInDown">
       <h2 class="mensaje">
-        Bienvenido a <span>codifica con stylo</span>
+        Bienvenida a <span>codifica con stylo</span>
       </h2>
       <p class="frase">
-        Aprende sobre los lenguajes de JavaScript y CSS 💡.
+        Aprende sobre los lenguajes de JavaScript y CSS de forma creativa y visual 
       </p>
 
-      <div class="carrusel">
+      <!-- Carrusel -->
+      <div class="carrusel animate__animated animate__zoomIn">
         <img
           :src="fotos[fotoActual]"
           :alt="'Imagen ' + (fotoActual + 1)"
-          class="imagen"
+          class="imagen img-fluid"
         />
       </div>
     </section>
+
+    
   </div>
+  <!-- Footer -->
+    <footer class="footer animate__animated animate__fadeInUp">
+      <div class="texto-footer">
+        © 2025 Codifica con Stylo 
+      </div>
+    </footer>
 </template>
 
 <script setup>
@@ -32,7 +42,7 @@ const fotoActual = ref(0)
 onMounted(() => {
   setInterval(() => {
     fotoActual.value = (fotoActual.value + 1) % fotos.length
-  }, 3000) // cambia cada 3 segundos
+  }, 3000)
 })
 </script>
 
@@ -43,27 +53,39 @@ export default {
 </script>
 
 <style scoped>
+/* Fondo total del componente */
+.inicio {
+  background: linear-gradient(to right, #ed9358, #b19885); /* rosa pastel a lila claro */
+  min-height: 100vh;
+  padding-bottom: 3rem;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Bienvenida */
 .bienvenida {
   text-align: center;
-  padding: 2rem 1rem;
+  padding: 3rem 1rem;
+  color: #4b3869;
 }
 
 .mensaje {
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
 }
 
 .mensaje span {
-  color: #81591e;
-  font-weight: bold;
+  color: #e05b13; /* rosa fuerte femenino */
+  font-weight: 900;
 }
 
 .frase {
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   color: #000000;
   margin-bottom: 2rem;
 }
 
+/* Carrusel */
 .carrusel {
   display: flex;
   justify-content: center;
@@ -72,10 +94,31 @@ export default {
 }
 
 .imagen {
-  width: 280px;
+  width: 300px;
   height: auto;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  transition: opacity 0.5s ease-in-out;
+  border-radius: 15px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
+  transition: transform 0.5s ease;
+}
+
+.imagen:hover {
+  transform: scale(1.05);
+}
+
+/* Footer femenino */
+.footer {
+  background-color: #4b3869;
+  color: #ffffff;
+  text-align: center;
+  padding: 1.2rem 1rem;
+  font-size: 0.95rem;
+  border-top: 4px solid #e75480;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.texto-footer {
+  font-style: italic;
 }
 </style>

@@ -3,7 +3,7 @@
     <header class="navbar">
       <img src="@/assets/logo.png" alt="Logo" class="logo" />
       <h1 class="titulo">
-        <span class='animado'>codifica con stylo</span></h1>
+        <span class='animado'>Poder y Estilo para la Web</span></h1>
       <nav class="menu">
         <router-link to="/" class="btn">Inicio</router-link>
         <router-link to="/javascript" class="btn">JavaScript</router-link>
@@ -75,7 +75,7 @@ export default {
 }
 
 #app {
-  background-color: #76af76; /* o prueba #00cc44 para un verde vibrante */
+  background-color: #afafaf; /* o prueba #00cc44 para un verde vibrante */
   min-height: 100vh;
 }
 /*ponerle efecto al titulo  */
